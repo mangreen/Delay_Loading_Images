@@ -40,6 +40,9 @@
         $(_config.container).bind(_config.event,function(){
             self._update();
         });
+        
+        //進入到頁面用戶沒有拖動滾動條，在頁面可視區域的圖片應該顯示出來，不應該讓用戶滾動頁面才顯示。
+        self._update();
     },
     /*
      * 加載對應的圖片
